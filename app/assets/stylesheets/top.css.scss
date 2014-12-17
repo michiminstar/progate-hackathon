@@ -6,7 +6,8 @@ h1, h2, h3, h4, body {
 }
 
 h2, h3 {
-  font-size: 1.25em;
+  font-size: 1.8em;
+  line-height: 1.5em;
   margin-top: 0;
 }
 
@@ -37,15 +38,9 @@ small {
   }
 }
 
-.lead, .login-link {
-  -webkit-font-smoothing: antialiased;
-  a {
-    color: #fff;
-  }
-}
-
 .footer {
   font-size: .95em;
+  text-align: center;
 }
 /* Global Layout
 ================================ */
@@ -85,23 +80,36 @@ body {
     }
   }
 }
-
-.dropdown-menu {
-  min-width: 70px;
-}
-.caret {
-  margin-left: 5px;
-}
-
 /* Jumbotron
 ================================ */
 .jumbotron {
   color: #fff;
-  background-image: url('bg.png');
+  background-image: url('top-bg.jpg');
+  z-index: -100;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 70%;
   padding: 200px 0 140px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#clock {
+  z-index: 10000000;
+}
+
+// video#bgvid {
+//   position: fixed;
+//   right: 0;
+//   bottom: 0;
+//   min-width: 100%;
+//   min-height: 100%;
+//   width: auto;
+//   height: auto;
+//   z-index: -100;
+//   background-image : url(top-bg.jpg) no-repeat;
+//   background-size: cover;
+// }
   /* Buttons
   ================================= */
   .btn-lg {
@@ -111,14 +119,14 @@ body {
     margin-right: 10px;
     padding: 12px 45px;
     letter-spacing: 0.2em;
-    background-color: rgba(89, 41, 155, 0.6);
+    background-color: #bba454;
     border: 0;
     border-radius: 3px;
     -webkit-font-smoothing: antialiased;
     -webkit-transition: all .2s;
     transition: all .2s;
     &:hover {
-      background-color: lighten(rgba(89, 41, 155, 0.6), 15%);
+      background-color: darken(#bba454, 10%);
     }
   }
   .btn-default {
@@ -143,7 +151,6 @@ body {
       margin-left: 5px;
     }
   }
-}
 
 /* Main Content
 ================================ */
@@ -154,38 +161,13 @@ body {
     margin-bottom: 0;
   }
 }
-
-.lesson-icon:before {
-  content: "";
-  display: block;
-  width: 175px;
-  height: 184px;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  background: url('lesson_hex.png') no-repeat;
-  background-size: 100%;
-  margin-top: 22px;
-  margin-bottom: 15px;
-}
-.jquery:before{
-  background-position: 0 -178px;
-}
-.ruby:before{
-  background-position: 0 -358px;
-}
-.txt-contents {
+.content {
   text-align: center;
-  width: 80%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
-  margin-bottom: 24px;
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-bottom: 60px;
 }
+
 /* Project Team
 ================================ */
 .team {
