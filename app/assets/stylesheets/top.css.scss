@@ -1,0 +1,238 @@
+/* Typography
+================================= */
+h1, h2, h3, h4, body {
+  font-family: "Lato", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", sans-serif;
+  color: #5f5d60;
+}
+
+h2, h3 {
+  font-size: 1.8em;
+  line-height: 1.5em;
+  margin-top: 0;
+}
+
+p {
+  color: #b3aeb5;
+  line-height: 1.7;
+  font-size: 0.8em;
+  font-weight: 200;
+}
+
+small {
+  font-size: 0.6em;
+}
+
+.jumbotron{
+  h1 {
+    font-weight: 600;
+    margin-bottom: 30px;
+    letter-spacing: 0.14em;
+    line-height: 1.2em;
+    font-size: 2em;
+    opacity: 0.8;
+  }
+  .lead {
+    color: #fff;
+    font-size: 0.7em;
+    margin-bottom: 70px;
+  }
+}
+
+.footer {
+  font-size: .95em;
+  text-align: center;
+}
+/* Global Layout
+================================ */
+body {
+  ul {
+    list-style-type: none;
+    margin: 0 0 0 1em;
+    padding: 0;
+  }
+}
+.container {
+  max-width: 1000px;
+}
+.row {
+  margin-bottom: 60px;
+}
+
+/* Navbar
+================================ */
+.navbar {
+  background-color: rgba(40, 33, 50, 0.9);
+  border-color: rgba(30, 27, 31, 0.9);
+  padding: 10px 0 10px 0;
+  .btn-default {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-left: 8px;
+    padding: 8px 20px 8px 20px;
+    color: #fff;
+    border: 0;
+    letter-spacing: 2px;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    &:hover {
+      color:  #957bba;
+      background-color: #fff;
+    }
+  }
+}
+/* Jumbotron
+================================ */
+.jumbotron {
+  color: #fff;
+  background-image: url('top-bg.jpg');
+  z-index: -100;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 70%;
+  padding: 200px 0 140px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#clock {
+  z-index: 10000000;
+}
+
+// video#bgvid {
+//   position: fixed;
+//   right: 0;
+//   bottom: 0;
+//   min-width: 100%;
+//   min-height: 100%;
+//   width: auto;
+//   height: auto;
+//   z-index: -100;
+//   background-image : url(top-bg.jpg) no-repeat;
+//   background-size: cover;
+// }
+  /* Buttons
+  ================================= */
+  .btn-lg {
+    font-size: 0.8em;
+  }
+  .btn-primary {
+    margin-right: 10px;
+    padding: 12px 45px;
+    letter-spacing: 0.2em;
+    background-color: #bba454;
+    border: 0;
+    border-radius: 3px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    &:hover {
+      background-color: darken(#bba454, 10%);
+    }
+  }
+  .btn-default {
+    color: #fff;
+    margin-right: 10px;
+    padding: 12px 22px;
+    letter-spacing: 0.2em;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #fff;
+    border-radius: 3px;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    &:hover {
+      background-color: #fff;
+      color: #957bba;
+    }
+  }
+  .glyphicon {
+    margin: 0 5px;
+    span {
+      margin-left: 5px;
+    }
+  }
+
+/* Main Content
+================================ */
+.heading {
+  text-align: center;
+  margin: 30px 0;
+  h2 {
+    margin-bottom: 0;
+  }
+}
+.content {
+  text-align: center;
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-bottom: 60px;
+}
+
+/* Project Team
+================================ */
+.team {
+  background-color: #f7f7f7;
+  .heading {
+    margin-top: 60px;
+  }
+  .col-sm-4 {
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    margin-top: 30px;
+    img {
+      border: 1px solid #98d361;
+      padding: 2px;
+    }
+    .name {
+      color: #98d361;
+      display: block;
+      margin-top: 2px;
+      margin-bottom: 30px;
+    }
+    .name:nth-child(3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+/* Call to Action
+================================ */
+.callout {
+  margin-top: 24px;
+  padding: 35px 0;
+  text-align: center;
+  h3 {
+    margin-bottom: 30px;
+  }
+  h3:first-child {
+    margin-bottom: 5px;
+  }
+  .btn-success {
+    position: relative;
+    background-color: #5dca88;
+    box-shadow: 0 3px 0 #1a7940;
+    border: 0;
+    width: 230px;
+    padding: 15px 0;
+    &:hover {
+      top: -3px;
+      box-shadow: 0 7px 0 #1a7940;
+    }
+  }
+  .btn-success:active {
+    top: 3px;
+    box-shadow: none;
+  }
+}
+
+
+/* SignUp Modal
+================================ */
+.modal {
+  width: 80%;
+  margin: auto;
+}
