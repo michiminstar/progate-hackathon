@@ -21,7 +21,7 @@ p {
 small {
   font-size: 0.6em;
 }
-
+.clear { clear: both;}
 .jumbotron{
   h1 {
     font-weight: 600;
@@ -52,7 +52,7 @@ body {
   }
 }
 .container {
-  max-width: 1000px;
+  max-width: 1200px;
 }
 .row {
   margin-bottom: 60px;
@@ -61,8 +61,10 @@ body {
 /* Navbar
 ================================ */
 .navbar {
-  background-color: rgba(40, 33, 50, 0.9);
-  border-color: rgba(30, 27, 31, 0.9);
+  // background-color: rgba(40, 33, 50, 0.9);
+  // border-color: rgba(30, 27, 31, 0.9);
+  // background-color: transparent;
+  // border-color: transparent;
   padding: 10px 0 10px 0;
   .btn-default {
     text-align: center;
@@ -80,36 +82,40 @@ body {
     }
   }
 }
+.navbar-inverse.navbar-scroll {
+  background-color: rgba(40, 33, 50, 0.9);
+  border-color: rgba(30, 27, 31, 0.9);
+  padding: 15px 0;
+}
+.navbar-inverse {
+  background-color: transparent;
+  border-color: transparent;
+  transition: all 0.3s ease-in-out 0s;
+}
 /* Jumbotron
 ================================ */
 .jumbotron {
   color: #fff;
-  background-image: url('top-bg.jpg');
+  background-image: url('top.png');
+  background-color: #375d7d;
   z-index: -100;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: 0 70%;
+  background-size: 50%;
+  background-position: -12% 82%;
   padding: 200px 0 140px 0;
-  text-align: center;
   text-transform: uppercase;
+  .lead {
+    text-align: right;
+  }
 }
 
 #clock {
-  z-index: 10000000;
+  letter-spacing: 6px;
+  font-size: 30px;
+  float: right;
+  text-align: right;
 }
 
-// video#bgvid {
-//   position: fixed;
-//   right: 0;
-//   bottom: 0;
-//   min-width: 100%;
-//   min-height: 100%;
-//   width: auto;
-//   height: auto;
-//   z-index: -100;
-//   background-image : url(top-bg.jpg) no-repeat;
-//   background-size: cover;
-// }
   /* Buttons
   ================================= */
   .btn-lg {
@@ -122,6 +128,7 @@ body {
     background-color: #bba454;
     border: 0;
     border-radius: 3px;
+    float: right; 
     -webkit-font-smoothing: antialiased;
     -webkit-transition: all .2s;
     transition: all .2s;
@@ -227,12 +234,4 @@ body {
     top: 3px;
     box-shadow: none;
   }
-}
-
-
-/* SignUp Modal
-================================ */
-.modal {
-  width: 80%;
-  margin: auto;
 }
