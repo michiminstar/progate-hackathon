@@ -1,11 +1,12 @@
 /* Typography
 ================================= */
-h1, h2, h3, h4, body {
+h1, h3, h4, body {
   font-family: "Lato", "游ゴシック", "YuGothic", "ヒラギノ角ゴ Pro W6", "HIragino Kaku Gothic Pro W6", sans-serif;
   color: #5f5d60;
 }
 
 h2, h3 {
+  color: #fff;
   font-size: 1.8em;
   line-height: 1.5em;
   margin-top: 0;
@@ -14,7 +15,6 @@ h2, h3 {
 p {
   color: #b3aeb5;
   line-height: 1.7;
-  // font-size: 0.8em;
   font-weight: 200;
 }
 
@@ -54,6 +54,8 @@ body {
 }
 .container {
   max-width: 1200px;
+  padding-bottom: 34px;
+  padding-top: 34px;
 }
 .row {
   margin-bottom: 60px;
@@ -102,9 +104,9 @@ body {
   z-index: -100;
   background-repeat: no-repeat;
   background-size: 50%;
-  background-position: -12% 82%;
+  background-position: -12% 78%;
   padding: 200px 0 140px 0;
-  text-transform: uppercase;
+  margin-bottom: 0;
 }
 
 #clock {
@@ -112,6 +114,8 @@ body {
   font-size: 30px;
   float: right;
   text-align: right;
+  text-transform: uppercase;
+
 }
 .notice {
   float: right;
@@ -170,7 +174,8 @@ body {
 ================================ */
 .heading {
   text-align: center;
-  margin: 30px 0;
+  margin: 60px 0 30px;
+  color: #fff;
   h2 {
     margin-bottom: 0;
   }
@@ -180,10 +185,15 @@ body {
   padding-right: 60px;
   padding-left: 60px;
   margin-bottom: 60px;
+  color: #fff;
 }
+.theme {background-color: #F67160;}
+.about { background-color: #7AC6F0;}
+.schedule {background-color: #FBD355;}
+.action { background-color: #81CBC5;}
+.white-text {color: #fff;}
 
-
-/* Call to Action
+/* Call to Action;
 ================================ */
 .callout {
   margin-top: 24px;
