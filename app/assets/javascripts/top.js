@@ -6,7 +6,6 @@
    + '<span>%M</span> minutes '
    + '<span>%S</span> seconds'));
     });
-});
 
 // $(function(){
 //   $('#clock').countDown({
