@@ -1,7 +1,11 @@
  $(function(){
+   $('#clock-day').countdown('2015/01/01 00:00:00', function(event) {
+   var $this = $(this).html(event.strftime(''
+   + '<span>%-D</span> day%!D '));
+    });
+
    $('#clock').countdown('2015/01/01 00:00:00', function(event) {
    var $this = $(this).html(event.strftime(''
-   + '<span>%-D</span> day%!D '
    + '<span>%H</span> hour%!H '
    + '<span>%M</span> minutes '
    + '<span>%S</span> seconds'));
