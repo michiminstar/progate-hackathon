@@ -11,19 +11,6 @@
    + '<span>%S</span> seconds'));
     });
  });
-// $(function(){
-//   $('#clock').countDown({
-//         targetDate: {
-//             'day': 1,
-//             'month': 10,
-//             'year': 2015,
-//             'hour': 0,
-//             'min': 0,
-//             'sec': 0
-//         },
-//         omitWeeks: true
-//     });
-//   });
 
 var cbpAnimatedHeader = (function() {
 
