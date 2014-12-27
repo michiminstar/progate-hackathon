@@ -1,0 +1,137 @@
+/ Navbar
+%nav.navbar.navbar-inverse.navbar-fixed-top{:role => "navigation"}
+  .container
+    /
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+    %a.navbar-brand.text-muted{:href => "#"} Progate Hackathon
+    .collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a.share-link{:href => "https://www.facebook.com/sharer/sharer.php?u=hackathon.prog-8.com"}
+            %i.fa.fa-facebook
+            %span.share-text Share
+        %li
+          %a.share-link{:href => "http://twitter.com/share?url=http://hackathon.prog-8.com&text=オンラインの元旦ハッカソン2015に参加します！", :onclick => "window.open(this.href, 'TWwindow', 'width=650, height=450, left=400, top=200,  menubar=no, toolbar=no, scrollbars=yes'); return false;"}
+            %i.fa.fa-twitter
+            %span.share-text Tweet
+        %li
+          %a.btn.btn-default.navbar-btn{:href => "https://www.facebook.com/events/598453210281876/"} エントリー
+/ End navbar
+/ Jumbotron
+.jumbotron
+  .container
+    %p.lead 元日ハッカソン ２０１５開始まで
+    #clock-day
+    .clear
+    .countdown
+      %span#clock
+    .clear
+    %p
+      %a.btn.btn-primary.btn-lg{:href => "https://www.facebook.com/events/598453210281876/"} エントリー
+    .clear
+    %p.notice
+      %small ※エントリーの際にfacebookページにアクセスします
+    .clear
+    %p.powered-by{:style => "color: white; font-size: 13px;"} Powered by Progate
+/ End Jumbotron
+/ Main Content
+.theme
+  .container
+    .heading
+      %h2
+        二〇一五年、コード初め。
+        %br>/
+        日本全国で繰り広げられるオンラインハッカソン
+    %p.content
+      "2015年、エンジニアが日本を元気にしていきたい"
+      %br/
+      そんな思いから、"元日 Hackathon 2015"を企画しました。
+      %br/
+      %br/
+      おそらく2015年世界最初のHackathon...
+      %br/
+      元日から爆速でコードを生み出しましょう。
+      %br/
+      %br/
+      2015年1月1日世界で最もコードを生む国"NIPPON"!!
+      %br/
+      %br/
+      みなさんの参加をお待ちしております。
+      %br/
+      今年の"福エンジニア"は誰だ...!?
+  / End Main Content
+/ About
+.about
+  .container
+    .heading
+      %h2.white-text 概要
+    %div{:style => "color: #b3aeb5; line-height: 1.7; font-weight: 200;"}
+      %ul.content.white-text
+        %li
+          【場所】
+          %br>/
+          どこでも（anywhere）
+      %br/
+      %li
+        【作成物】
+        %br>/
+        Webアプリケーション（指定言語なし）(any language)
+      %br/
+      %li
+        【テーマ】
+        %br>/
+        ２０１５年、日本を元気にするアプリケーション (anything)
+      %br/
+      %li
+        【優勝賞品】
+        %br>/
+        優勝者にはお年玉として、
+        %span{:style => "color: #f5c44b;"}> 新品のOculus DK2
+        贈呈
+/ End About
+/ Schedule
+.schedule
+  .container
+    .heading
+      %h2 スケジュール
+    %p.content
+      １.     オンラインフォームで申し込み
+      %br/
+      ２.     大晦日まで待機
+      %br/
+      ３.    ２０１５年１月１日０時００分００秒ハッカソン開始
+      %br/
+      ４.    ２０１５年１月１日２３時５９分５９秒ハッカソン終了
+      %br/
+      ５.    各自作品をFacebookページにデプロイ
+      %br/
+      ６.    最優秀賞決定
+/ End Schedule
+/ Call to Action
+.action
+  .container
+    .callout
+      %h3 2015年、一緒に日本を元気にしませんか？
+      %a.btn.btn-success.btn-lg{:href => "https://www.facebook.com/events/598453210281876/"} エントリー
+/ End Call to Action
+/ Footer
+.footer
+  .container
+    .footer-inner
+      %div
+        %h4
+          %a{:href => "#"} Progate Hackathon
+        %p Powered by Progate
+      %div
+        %p
+          %a{:href => "http://prog-8.com/#contact-form"} Contact
+        %p
+          %a{:href => "http://prog-8.com/user_policy"} Privary Policy
+    %hr/
+    %p.copy
+      %small &copy; 2014 Progate. Inc
+  / End Footer
