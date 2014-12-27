@@ -1,0 +1,15 @@
+!!!
+%html
+  %head{:prefix => "og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"}
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title Progate Hackathon 2015
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = stylesheet_link_tag 'http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css'
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+    = favicon_link_tag '/assets/favicon.ico'
+    = render 'shared/fb_opg'
+  %body
+    = yield
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true

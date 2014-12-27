@@ -2,6 +2,12 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 gem 'rails', '4.0.5'
 
+#View & Helpers
+gem 'haml-rails'
+
+# Modify erb to haml
+gem 'erb2haml'
+
 gem 'sass-rails', '4.0.5'
 gem 'uglifier', '2.1.1'
 gem 'coffee-rails', '4.0.1'
